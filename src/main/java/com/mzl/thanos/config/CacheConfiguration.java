@@ -41,6 +41,18 @@ public class CacheConfiguration {
             cm.createCache(com.mzl.thanos.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.mzl.thanos.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.mzl.thanos.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.mzl.thanos.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
